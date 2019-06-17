@@ -11,7 +11,7 @@ import java.util.Timer;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        new Timer().schedule(new BeerContainerMonitor(new TemperatureSensor()), 0, 5000);
+        new Timer().schedule(new BeerContainerMonitor(new TemperatureSensor()), 0, 10000);
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
